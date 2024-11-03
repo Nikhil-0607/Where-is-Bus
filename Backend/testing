@@ -1,0 +1,14 @@
+GET http://localhost:5000/api/buses
+GET http://localhost:5000/api/buses/:busId
+POST http://localhost:5000/api/buses/track-bus
+{
+  "busId": 1,
+  "location": {
+    "longitude": 77.123456,
+    "latitude": 28.123456
+  }
+}
+GET http://localhost:5000/api/routes
+GET http://localhost:5000/api/routes/:routeId
+GET http://localhost:5000/api/schedule/:busId
+GET http://localhost:5000/api/schedule/date/:date
